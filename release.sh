@@ -5,8 +5,8 @@ tag=$(echo $REF | rev | cut -d'/' -f1 | rev)
 echo "The tag is ${tag}!!"
 
 # Parse the tag for prefix and suffix
-release_type=$(echo $tag  cut -d'-' -f1)
-version=$(echo $tag  cut -d'-' -f2)
+release_type=$(echo $tag | cut -d'-' -f1)
+version=$(echo $tag | cut -d'-' -f2)
 
 # Dispatch to the various types of releases
 if [ "$release_type" == "test" ]
