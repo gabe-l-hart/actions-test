@@ -28,5 +28,4 @@ jobs:
       # Runs the docker build for the unit tests
       - name: Run a one-line script
         run: |
-          cd src/python
           docker build .
