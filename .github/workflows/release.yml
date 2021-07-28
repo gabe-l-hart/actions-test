@@ -26,4 +26,4 @@ jobs:
       # Runs the docker build for the unit tests
       - name: Run a one-line script
         run: |
-          echo ${{ toJson(github) }}
+          HTML_URL="${{ github.event.release.html_url }}" ./release.sh
