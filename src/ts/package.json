@@ -7,6 +7,6 @@
   "dependencies": {
     "typescript": "^3.6.4",
     "@types/node": "^12.12.5",
-    "alchemy-logging": "^1.0.1"
+    "alchemy-logging": "1.0.4"
   }
 }
